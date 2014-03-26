@@ -1,0 +1,117 @@
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+li {
+	display: block;
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.default-skin {
+	background: #ccc;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	height: auto;
+	background: #f7f5fa;
+	display: block;
+	text-shadow:0 1px 0 #fff;
+	border-radius: 5px;
+	overflow:scroll;
+}
+
+.content {
+	width: 80%;
+	float: left;
+	overflow:scroll;
+	background: #0f192a;
+	color: #999;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.tree-node {
+	width: 100%;
+	position: relative;
+	display:inline-block;
+}
+
+.tree-name {
+	height: 24px;
+	display: inline-block;
+	line-height: 24px;
+	position: relative;
+
+}
+
+.tree-children li {
+	
+	margin-left: 24px;
+}
+
+.tree-nothing {
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	display:inline-block;
+}
+
+.tree-wholerow {
+	height:24px;
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+}
+.tree-clicked {
+	background: linear-gradient(to bottom,#beebff 0,#a8e4ff 100%);
+}
+
+.tree-open,
+.tree-close,
+.tree-folder,
+.tree-file
+ {
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	display:inline-block;
+	position: relative;
+	background-image:url('./images/icon.png');
+}
+
+.tree-close {
+	background-position: -4px -4px;
+}
+
+.tree-open {
+	background-position: -36px -4px;
+}
+
+.tree-folder {
+	background-position:-260px -4px;
+}
+
+.tree-file {
+	background-position: -100px -68px;
+}
+
+
